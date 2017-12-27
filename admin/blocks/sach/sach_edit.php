@@ -14,7 +14,7 @@ if (isset($_POST['btnSubmit'])) {
 <form action="" method="post" name="form_add_dm_ks">
     <div>
         <div >
-            <h3>書籍管理 : cập nhật</h3>
+            <h3>書籍管理 : 回復更新</h3>
         </div>
 
         <div class="clr"></div>

@@ -12,7 +12,7 @@ if(isset($_POST[btnSumit])){
 <form action="" method="post" name="form_add_dm_ks">
 <div>
 	<div>
-		<h3>譯者-作者 : cập nhật</h3>
+		<h3>譯者-作者 : 回復更新</h3>
     </div>   
     <div class="clr"></div>
 </div>

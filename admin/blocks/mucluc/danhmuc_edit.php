@@ -13,7 +13,7 @@ if(isset($_POST[btnSumit])){
 <form action="" method="post" name="form_add_dm_ks">
 <div id="admin_navigation">
 	<div style="float:left;width:90%">
-		<h3>類目 : cập nhật</h3>
+		<h3>類目 : 回復更新</h3>
     </div>
     <div style="float:left;width:5%;padding-top:5px">
     	<input type="submit" class="save" name="btnSumit" value=""/><br />		
