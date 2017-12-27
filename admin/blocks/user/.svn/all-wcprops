@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/8/trunk/admin/blocks/user
+END
+user_list.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/9/trunk/admin/blocks/user/user_list.php
+END
+user_changepass.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/9/trunk/admin/blocks/user/user_changepass.php
+END
+user_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/9/trunk/admin/blocks/user/user_edit.php
+END
+user_success.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/9/trunk/admin/blocks/user/user_success.php
+END
+user_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/9/trunk/admin/blocks/user/user_add.php
+END

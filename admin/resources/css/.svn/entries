@@ -1,0 +1,70 @@
+10
+
+dir
+0
+https://vnbet-new.googlecode.com/svn/trunk/admin/resources/css
+https://vnbet-new.googlecode.com/svn
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+67a512d1-916f-5393-3f3e-07aa035a2a5c
+
+colors
+dir
+
+
+
+add
+
+style_fixed.css
+file
+
+
+
+add
+
+style.css
+file
+
+
+
+add
+
+style_fixed_full.css
+file
+
+
+
+add
+
+reset.css
+file
+
+
+
+add
+
+style_full.css
+file
+
+
+
+add
+

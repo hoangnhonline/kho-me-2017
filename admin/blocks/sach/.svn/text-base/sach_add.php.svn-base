@@ -1,0 +1,81 @@
+<?php
+if (isset($_POST['btnSubmit'])) {
+    $thanhcong = $s->Sach_Them($loi);
+    if ($thanhcong == true) {
+        header("location:?com=sach_list");
+    }
+}
+?>
+    <div>
+        <div >
+            <h3>Quản lý sách : Thêm mới</h3>
+        </div>  
+        <div class="clr"></div>
+    </div>
+    <form action="" method="post">
+        <div class="form">
+                <div class="fields">
+                        <div class="field field-first">
+                                <div class="label">
+                                        <label for="select">Thư mục:</label>
+                                </div>
+                                <div class="select">
+                                    <select id="idML" name='idML'>
+                                            <option value='0'>Chọn thư mục</option>
+                                            <?php
+                                            $MucLuc = $ml->MucLuc_List();
+                                            while ($row = mysql_fetch_assoc($MucLuc)) {
+                                                ?>
+                                                <option value='<?php echo $row['idML'] ?>'><?php echo $row['TenMucLuc']; ?></option>
+                                            <?php } ?>
+                                    </select>
+                                </div>
+                        </div>
+
+                        <div class="field">
+                                <div class="label">
+                                        <label for="input-medium">Tên sách/Tên loại album:</label>
+                                </div>
+                                <div class="input">
+                                        <input type="text" name="TenSach" id="TenSach" class="medium" />
+                                </div>
+                        </div>		
+                            <div class="field field-first">
+                                <div class="label">
+                                        <label for="select">Dịch giả - tác giả:</label>
+                                </div>
+                                <div class="select">
+                                    <select  name='idTG' id="idTG"  class="tacgia">
+                                            <option value='0'>Chọn tác giả</option>
+                                            <?php
+                                            $MucLuc = $tg->TacGia_List();
+                                            while ($row = mysql_fetch_assoc($MucLuc)) {
+                                                ?>
+                                                <option value='<?php echo $row['idTG'] ?>'><?php echo $row['TacGia']; ?></option>
+                                            <?php } ?>
+                                    </select>
+                                </div>
+                        </div>
+                        <div class="field">
+                                <div class="label">
+                                        <label for="input-small">Nhà xuất bản:</label>
+                                </div>
+                                <div class="input">
+                                        <input type="text"  name="NhaXB" id="NhaXB" class="small" />
+                                </div>
+                        </div>	
+                        <div class="field">
+                                <div class="label">
+                                        <label for="input-small">Năm xuất bản:</label>
+                                </div>
+                                <div class="input">
+                                        <input type="text" name="NamXB" id="NamXB" class="small" />
+                                </div>
+                        </div>	
+                        <div class="buttons">
+                                <input type="submit" name="btnSubmit" value="Save" />
+                                <input type="reset" name="reset" value="Reset" />							
+                        </div>
+                </div>
+        </div>
+        </form>

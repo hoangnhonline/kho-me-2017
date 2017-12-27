@@ -1,0 +1,178 @@
+<?php
+$link = "index.php?com=trang_list";
+if(isset($_GET['idTrang'])){
+    $idTrang = (int) $_GET['idTrang'];
+    $list_trang=  mysql_query("SELECT * FROM trang WHERE idTrang = $idTrang");
+}else{
+    if (isset($_GET['idMLs']) && $_GET['idMLs'] > 0) {
+        $idMLs = $_GET['idMLs'];
+        settype($idMLs, "int");
+        $link.="&idMLs=$idMLs";
+    } else {
+        $idMLs = -1;
+    }
+    if (isset($_GET['idSachs']) && $_GET['idSachs'] > 0) {
+        $idSachs = $_GET['idSachs'];
+        settype($idSachs, "int");
+        $link.="&idSachs=$idSachs";
+    } else {
+        $idSachs = -1;
+    }
+    if (isset($_GET['idDMs']) && $_GET['idDMs'] > 0) {
+        $idDMs = $_GET['idDMs'];
+        settype($idDMs, "int");
+        $link.="&idDMs=$idDMs";
+    } else {
+        $idDMs = -1;
+    }
+
+    $page_show = 5;
+
+    $limit = 10;
+
+    $trangs = $trang->trang_list_theo_user($idMLs, $idSachs, $idDMs, -1, -1);
+
+    $total_record = mysql_num_rows($trangs);
+
+    $total_page = ceil($total_record / $limit);
+
+    if (isset($_GET[page]) == false) {
+        $page = 1;
+    } else {
+        $page = $_GET[page];
+        settype($page, "int");
+    }
+
+    $offset = $limit * ($page - 1);
+
+    $list_trang = $trang->trang_list_theo_user($idMLs, $idSachs, $idDMs, $limit, $offset);
+}
+?>
+<script type="text/javascript">
+    $(document).ready(function(){		
+        $(".linkxoa").live('click',function(){			
+            var flag = confirm("Bạn có chắc chắn xóa");
+            if(flag == true){
+                var idTrang = $(this).attr("idTrang");
+                $.get('xoa.php',{loai:"trang",id:idTrang},function(data){
+                    window.location.reload();			
+                });	
+            }
+        })
+        
+    })
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){		
+        //$('#idDMs').load('blocks/ajax_laydanhmuctrang.php?idSach=' + $("#idSach").val());
+        //$("#idSach").load("blocks/ajax_laysach.php?idML="+ $("#idMLs").val());
+<?php if (isset($_GET['idDMs'])) { ?>
+                            $('#idDMs').val(<?php echo $_GET['idDMs'] ?>);
+<?php } ?>
+<?php if (isset($_GET['idSachs'])) { ?>
+                            $('#idSach').val(<?php echo $_GET['idSachs'] ?>);
+<?php } ?>
+<?php if (isset($_GET['idMLs'])) { ?>
+                            $('#idMLs').val(<?php echo $_GET['idMLs'] ?> );
+<?php } ?>
+		
+                        $("#idSach").change(function(){						
+                            $('#idDMs').load('blocks/ajax_laydanhmuctrang.php?idSach=' + $(this).val());
+                        })
+                        $("#idMLs").change(function(){
+                            $("#idSach").load("blocks/ajax_laysach.php?idML="+ $(this).val());
+                        })
+                    });
+
+</script>
+
+<div>
+    <div>
+        <h3>Quản lý trang : Xem danh sách</h3>
+    </div>
+
+    <div class="clr"></div>
+</div>
+<div id="main_admin">
+
+    <div>
+
+        <div>                     
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="6">
+                            <form method="get" action="" name="formTim" id="formTim">
+                                Thư mục 
+                                <select name='idMLs' id="idMLs">
+                                    <option value='0'>Chọn thư mục</option>
+                                    <?php
+                                    $MucLuc1 = $ml->MucLuc_List();
+                                    while ($row1 = mysql_fetch_assoc($MucLuc1)) {
+                                        ?>
+                                        <option <?php if ($_GET['idMLs'] == $row1['idML']) echo "selected"; ?> value='<?php echo $row1[idML] ?>'><?php echo $row1['TenMucLuc']; ?></option>
+<?php } ?>
+                                </select>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Sách 
+                                <select name='idSachs' id="idSach" class="tacgia">
+                                    <option value='0'>Chọn sách</option>
+
+                                </select>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+                                Mục Lục 
+                                <select name='idDMs' id="idDMs" class="tacgia">
+                                    <option value='0'>Chọn mục lục</option>                                   
+                                </select> 
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                       
+                                <span style="color:red;font-weight: bold">ID TRANG</span> <input type="text" name="idTrang" id="idTrang" value="<?php echo $_GET['idTrang']; ?>"/>
+                                <input type="submit" name="btnSubmit" id="btnSubmit" value="  Xem " />
+                                <br /><br />
+                                <input type="hidden" name="com" value="trang_list"  />
+                            </form>                                     
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6"><?php echo $ml->phantrang($page, $page_show, $total_page, $link); ?></td>
+                    </tr>
+                    <tr>
+                        <th width="1%"></th>
+                        <th align="center" width="1%">ID Trang</th>
+                        <th align="left">Tên sách </th>
+                        <th align="left">Mục lục </th>  
+                        <th align="center" width="1%">Thứ tự</th>                              
+                        <th width="1%">Action</th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <?php
+                    $i = 0;
+                    while ($row_trang = mysql_fetch_assoc($list_trang)) {
+                        $TenSach = $s->LayTenSach($row_trang['idSach']);
+                        $TenMucLuc = $dm->LayTenDanhMuc($row_trang['idDM']);
+                        $i++;
+                        ?>	
+                        <tr <?php if ($i % 2 == 0) echo "bgcolor='#CCC'"; ?>>
+                            <td><input type="checkbox" name="chon" idDM=<?php echo $row_trang['idTrang'] ?>></td> 
+                            <td align="center"><?php echo $row_trang['idTrang'] ?></td> 
+                            <td align="left"><?php echo $TenSach; ?></td> 
+                            <td align="left"><?php echo $TenMucLuc; ?></td>  
+                            <td align="center"><?php echo $row_trang['ThuTu'] ?></td>  
+
+                            <td><a href="index.php?com=trang_edit&amp;idTrang=<?php echo $row_trang['idTrang'] ?>"><img src="../img/icons/user_edit.png" alt="" title="" border="0"></a></td>
+
+<?php } ?>
+                    <tr>
+                        <td colspan="6"><?php echo $ml->phantrang($page, $page_show, $total_page, $link); ?></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>        
+    </div>
+
+
+    <div class="clr"></div>
+</div>

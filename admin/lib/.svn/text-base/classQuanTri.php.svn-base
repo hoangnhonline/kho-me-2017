@@ -1,0 +1,28 @@
+<?php
+require_once "class.db.php";
+class quantri extends db{
+
+	function XoaMucLuc($id){
+		$sql ="DELETE FROM mucluc WHERE idML= $id";
+		mysql_query($sql) or die(mysql_error());
+	}
+	function XoaSach($id){
+		$sql ="DELETE FROM sach WHERE idSach= $id";
+		mysql_query($sql) or die(mysql_error());
+	}
+    function XoaDanhMuc($id){
+		$sql ="DELETE FROM danhmuc WHERE idDM= $id";
+		mysql_query($sql) or die(mysql_error());
+	}
+	function XoaTrang($id){
+		$sql ="DELETE FROM trang WHERE idTrang= $id";
+		mysql_query($sql) or die(mysql_error());
+	}
+	function XoaTacGia($id){
+		$sql ="DELETE FROM tacgia WHERE idTG= $id";
+		mysql_query($sql) or die(mysql_error());
+	}
+	
+	
+} //class quantri
+?>
