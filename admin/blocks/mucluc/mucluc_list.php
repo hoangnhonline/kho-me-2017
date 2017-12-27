@@ -96,7 +96,7 @@ $sach = $dm->DanhMuc_List($idMLs, $idSachs, $limit, $offset);
                                         ?>
                                         <option <?php if ($_GET['idSachs'] == $row['idSach']) echo "selected=selected"; ?> value='<?php echo $row['idSach'] ?>'><?php echo $row['TenSach']; ?></option>
                                     <?php } ?>
-                                </select>&nbsp;&nbsp;&nbsp;<input type="submit" name="btnSubmit" id="btnSubmit" value="  Xem " /><input type="hidden" name="com" value="mucluc_list"  />
+                                </select>&nbsp;&nbsp;&nbsp;<input type="submit" name="btnSubmit" id="btnSubmit" value="  看 " /><input type="hidden" name="com" value="mucluc_list"  />
                             </form>                                 
                         </td>
                     </tr>

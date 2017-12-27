@@ -8,7 +8,7 @@ if (isset($_POST['btnSubmit'])) {
 ?>
     <div>
         <div >
-            <h3>書籍管理 : Thêm mới</h3>
+            <h3>書籍管理 : 新加</h3>
         </div>
         <div class="clr"></div>
     </div>
@@ -83,8 +83,8 @@ if (isset($_POST['btnSubmit'])) {
                                 </div>
                         </div>
                         <div class="buttons">
-                                <input type="submit" name="btnSubmit" value="Save" />
-                                <input type="reset" name="reset" value="Reset" />
+                                <input type="submit" name="btnSubmit" value="重置" />
+                                <input type="reset" name="reset" value="上载" />
                         </div>
                 </div>
         </div>
@@ -123,7 +123,7 @@ $(function(){
 		$("#btnUpload").click(function(){
 			$("#div_upload" ).dialog({
 				modal: true,
-				title: 'Upload images',
+				title: '成功上传',
 				width: 350,
 				draggable: true,
 				resizable: false,

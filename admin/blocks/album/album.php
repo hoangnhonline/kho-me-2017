@@ -32,7 +32,7 @@ if(isset($_POST[btnSumit])){
 <form action="" method="post" name="form_add_dm_ks">
 <div>
 	<div>
-		<h3>Album : <?php echo (isset($_GET['idAlbum']) ? "Cập nhật" : "Thêm mới")?></h3>
+		<h3>Album : <?php echo (isset($_GET['idAlbum']) ? "Cập nhật" : "新加")?></h3>
     </div>     
     <div class="clr"></div>
 </div>
@@ -68,7 +68,7 @@ if(isset($_POST[btnSumit])){
                                 <th scope="col" class="rounded-company"></th>       
                                 <th  align="center">ID</th>
                                 <th  align="left">Tên album</th> 
-                                <th  align="left">Người tạo</th>                                  
+                                <th  align="left">编入者</th>                                  
                                 <th >回復更新</th>
                                 <th>刪除</th>
                             </tr>

@@ -29,7 +29,7 @@
                             <td colspan="6">
                                 <form method="get" action="" name="formTim" id="formTim">
 
-                                    Người tạo
+                                    编入者
                                     <select name='idUser'>
                                         <option value='0'>Chọn người tạo</option>
                                         <option <?php if ($_GET['idUser'] == 1) echo "selected"; ?> value='1'>Bé Bé</option>
@@ -38,7 +38,7 @@
 
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
-                                    <input type="submit" name="btnSubmit" id="btnSubmit" value="  Xem " />
+                                    <input type="submit" name="btnSubmit" id="btnSubmit" value="  看 " />
                                     <br /><br />
                                     <input type="hidden" name="com" value="thumuc_list"  />
                                 </form>                                 
@@ -48,7 +48,7 @@
                             <th width="1%"></th>       
                             <th align="center" width="1%">ID</th>
                             <th align="left">Tên thư mục</th> 
-                            <th align="left">Người tạo</th>                                  
+                            <th align="left">编入者</th>                                  
                             <th>回復更新</th>
                             <th>刪除</th>
                         </tr>

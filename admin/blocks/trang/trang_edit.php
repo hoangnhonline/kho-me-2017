@@ -31,7 +31,7 @@ if(isset($_POST['btnSumit'])){
             	<table>
 					
                     <tr class="left">
-                    	<td class="nowrap">Tên sách</td>
+                    	<td class="nowrap">书名</td>
                         <td>
 							<select name='idSach' id="idSach" style="width: 400px">
 								<option value='0'>Chọn sách</option>
@@ -82,7 +82,7 @@ if(isset($_POST['btnSumit'])){
                             skin:'office2003',
                            	height:300,
                             toolbar:[
-                            ['Source','-','Save','NewPage','Preview','-','Templates'],
+                            ['Source','-','重置','NewPage','Preview','-','Templates'],
                             ['Cut','Copy','Paste','PasteText','PasteFromWord','-','Print'],
                             ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
                             ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'],
@@ -103,9 +103,9 @@ if(isset($_POST['btnSumit'])){
                 <tr>
                          <td colspan="2">
                          <div style="padding-left:200px">                           
-                                <input type="submit" class="save" name="btnSumit" value="Save" />		                               
+                                <input type="submit" class="save" name="btnSumit" value="重置" />		                               
                           
-                                <input type="reset" class="cancel" name="btnCancel" value="Reset"/>                                                      
+                                <input type="reset" class="cancel" name="btnCancel" value="上载"/>                                                      
                            
                         </div>
                              </td>

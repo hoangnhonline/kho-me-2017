@@ -17,11 +17,11 @@ if(isset($_POST[btnSumit])){
     </div>
     <div style="float:left;width:5%;padding-top:5px">
     	<input type="submit" class="save" name="btnSumit" value=""/><br />		
-        <span>Save</span>
+        <span>重置</span>
     </div>
     <div style="float:left;width:5%;padding-top:5px">
     	<input type="reset" class="cancel" name="btnCancel" value=""/><br />		
-        <span>Reset</span>
+        <span>上载</span>
     </div>
     <div class="clr"></div>
 </div>
@@ -32,7 +32,7 @@ if(isset($_POST[btnSumit])){
         	<legend>Thông tin chi tiết</legend>
             	<table>
 					<tr class="left">
-                    	<td>Tên sách</td>
+                    	<td>书名</td>
                         <td>
 							<select name='idSach'>
 								<option value='0'>Chọn sách</option>

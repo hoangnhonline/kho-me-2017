@@ -14,7 +14,7 @@
                 <thead>
                     <tr>
                         <th></th>
-                        <th  align="left">Tên dịch giả - tác giả</th>                                
+                        <th  align="left">相册名称</th>                                
                         <th >回復更新</th>
                         <th>刪除</th>
                     </tr>

@@ -139,7 +139,7 @@ if (isset($_POST['btnSumit'])) {
 <form action="" method="post" name="form_add_dm_ks">
     <div>
         <div>
-            <h3>頁面 : <?php echo (isset($_GET['idTrang']) ? "Cập nhật" : "Thêm mới") ?></h3>
+            <h3>頁面 : <?php echo (isset($_GET['idTrang']) ? "Cập nhật" : "新加") ?></h3>
         </div>    
         <div class="clr"></div>
     </div>
@@ -178,7 +178,7 @@ if (isset($_POST['btnSumit'])) {
                     </td>                        
                 </tr> 
                 <tr class="left">
-                    <td>Tên sách</td>
+                    <td>书名</td>
                     <td>
 <?php if (isset($row_ct['idSach'])) { ?>
                             <select name='idSach' id="idSach" style="width:400px">

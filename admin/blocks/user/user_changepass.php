@@ -36,7 +36,7 @@ if(isset($_POST['btnSubmit'])){
                     <tr class="left">
                         <td>&nbsp;</td>
                         <td>
-                            <input type="submit" name="btnSubmit" id="btnSumit" value="Save" onclick="return checksubmit();" />
+                            <input type="submit" name="btnSubmit" id="btnSumit" value="重置" onclick="return checksubmit();" />
                         </td>
                     </tr>
 

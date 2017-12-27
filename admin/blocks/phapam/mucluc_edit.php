@@ -16,11 +16,11 @@ if(isset($_POST[btnSumit])){
     </div>
     <div style="float:left;width:5%;padding-top:5px">
     	<input type="submit" class="save" name="btnSumit" value=""/><br />		
-        <span>Save</span>
+        <span>重置</span>
     </div>
     <div style="float:left;width:5%;padding-top:5px">
     	<input type="reset" class="cancel" name="btnCancel" value=""/><br />		
-        <span>Reset</span>
+        <span>上载</span>
     </div>
     <div class="clr"></div>
 </div>

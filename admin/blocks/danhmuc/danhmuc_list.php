@@ -29,7 +29,7 @@
                     <tr>
                         <th scope="col" class="rounded-company"></th>       
 
-                        <th scope="col" class="rounded">Tên sách </th>
+                        <th scope="col" class="rounded">书名 </th>
                         <th scope="col" class="rounded">Tên 類目 </th>                                
                         <th scope="col" class="rounded">回復更新</th>
                         <th scope="col" class="rounded-q4">刪除</th>

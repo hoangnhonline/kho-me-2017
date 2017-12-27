@@ -32,7 +32,7 @@ if(isset($_POST['btnSumit'])){
 <form action="" method="post" name="form_add_dm_ks">
 <div>
 	<div>
-		<h3>thư mục : <?php echo (isset($_GET['idML']) ? "Cập nhật" : "Thêm mới")?></h3>
+		<h3>thư mục : <?php echo (isset($_GET['idML']) ? "Cập nhật" : "新加")?></h3>
     </div     
     <div class="clr"></div>
 
@@ -50,9 +50,9 @@ if(isset($_POST['btnSumit'])){
                      <tr>
                          <td colspan="2">
                          <div style="padding-left:200px">                           
-                                <input type="submit" class="save" name="btnSumit" value="Save" onclick="return validate();"/>		                               
+                                <input type="submit" class="save" name="btnSumit" value="重置" onclick="return validate();"/>		                               
                           
-                                <input type="reset" class="cancel" name="btnCancel" value="Reset"/>                                                      
+                                <input type="reset" class="cancel" name="btnCancel" value="上载"/>                                                      
                            
                         </div>
                              </td>
@@ -72,7 +72,7 @@ if(isset($_POST['btnSumit'])){
                                 <th  width="1%"></th>       
                                 <th align="center" width="1%">ID</th>
                                 <th align="left">Tên thư mục</th> 
-                                <th align="left">Người tạo</th>                                  
+                                <th align="left">编入者</th>                                  
                                 <th>回復更新</th>
                                 <th class="rounded-q4">刪除</th>
                             </tr>

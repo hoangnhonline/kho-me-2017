@@ -38,7 +38,7 @@ $(function(){
 
 <div>
 	<div>
-		<h3>類目 : <?php echo (isset($_GET['idDM']) ? "Cập nhật" : "Thêm mới")?></h3>
+		<h3>類目 : <?php echo (isset($_GET['idDM']) ? "Cập nhật" : "新加")?></h3>
     </div>
     <div class="clr"></div>
 </div>
@@ -61,7 +61,7 @@ $(function(){
                         </td>
                     </tr>
 					<tr class="left">
-                    	<td>Tên sách</td>
+                    	<td>书名</td>
                         <td>
 							<select name='idSach' id="isSach">
 								<option value='0'>Chọn sách</option>
@@ -82,9 +82,9 @@ $(function(){
                      <tr>
                          <td colspan="2">
                          <div style="padding-left:200px">
-                                <input type="submit" class="save" name="btnSumit" value="Save" id="btnSubmit" onclick="return validate();"/>
+                                <input type="submit" class="save" name="btnSumit" value="重置" id="btnSubmit" onclick="return validate();"/>
 
-                                <input type="reset" class="cancel" name="btnCancel" value="Reset"/>
+                                <input type="reset" class="cancel" name="btnCancel" value="上载"/>
 
                         </div>
                              </td>

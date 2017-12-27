@@ -22,7 +22,7 @@ if(isset($_POST[btnSumit])){
     	
             	<table>
                    <tr class="left">
-                        <td style="width: 150px">Tên dịch giả - tác giả</td>
+                        <td style="width: 150px">相册名称</td>
                         <td><input type="text" name="TacGia" id="TacGia" class="tf" value="<?php echo $row['TacGia'] ?>" style="width: 400px;height: 25px" />
                             <span class="error"><?php echo $loi['TacGia']; ?></span>
                         </td>                        
@@ -36,9 +36,9 @@ if(isset($_POST[btnSumit])){
                     <tr>
                         <td colspan="2">
                             <div style="padding-left:200px">                           
-                                <input type="submit" class="save" name="btnSumit" value="Save" onclick="return validate();"/>		                               
+                                <input type="submit" class="save" name="btnSumit" value="重置" onclick="return validate();"/>		                               
 
-                                <input type="reset" class="cancel" name="btnCancel" value="Reset"/>                                                      
+                                <input type="reset" class="cancel" name="btnCancel" value="上载"/>                                                      
 
                             </div>
                         </td>

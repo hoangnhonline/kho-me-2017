@@ -80,7 +80,7 @@ if (isset($_POST['btnSumit'])) {
 <form action="" method="post" name="form_add_dm_ks">
     <div>
         <div>
-            <h3>album : <?php echo (isset($_GET['idDM']) ? "Cập nhật" : "Thêm mới") ?></h3>
+            <h3>album : <?php echo (isset($_GET['idDM']) ? "Cập nhật" : "新加") ?></h3>
         </div>
       
         <div class="clr"></div>
@@ -105,7 +105,7 @@ if (isset($_POST['btnSumit'])) {
                         </td>
                     </tr>
                     <tr class="left">
-                        <td  width="150px">Loại album</td>
+                        <td  width="150px">选择书籍</td>
                         <td>
                             <select name='idSach' id="isSach" style="width: 400px">
                                 <option value='0'>Chọn sách</option>
@@ -159,7 +159,7 @@ while ($row = mysql_fetch_assoc($MucLuc)) {
                                     <?php } ?>
                                 </select>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                Loại album
+                                选择书籍
                                 <select name='idSachs' id="isSach" style="width: 400px">
                                     <option value='0'>Chọn sách</option>
 <?php
@@ -170,7 +170,7 @@ while ($row = mysql_fetch_assoc($sachs)) {
 <?php } ?>
                                 </select>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <input type="submit" name="btnSubmit" id="btnSubmit" value="  Xem " />
+                                <input type="submit" name="btnSubmit" id="btnSubmit" value="  看 " />
                                 <br /><br />
                                 <input type="hidden" name="com" value="album_add"  />
                             </form>
@@ -183,7 +183,7 @@ while ($row = mysql_fetch_assoc($sachs)) {
                         <th width="1%"></th>
                         <th width="1%"> Album ID </th>
                         <th> 資料夾 </th>
-                        <th> Loại album </th>
+                        <th> 选择书籍 </th>
                         <th align="left">Tên Album </th>
                         <th>Hình đại diện</th>
                         <th>回復更新</th>

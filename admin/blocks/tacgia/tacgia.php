@@ -33,7 +33,7 @@ if (isset($_POST['btnSumit'])) {
 <form action="" method="post" name="form_add_dm_ks">
     <div>
         <div>
-            <h3>譯者-作者 : <?php echo (isset($_GET['idTG']) ? "Cập nhật" : "Thêm mới") ?></h3>
+            <h3>譯者-作者 : <?php echo (isset($_GET['idTG']) ? "Cập nhật" : "新加") ?></h3>
         </div>    
         <div class="clr"></div>
     </div>
@@ -57,9 +57,9 @@ if (isset($_POST['btnSumit'])) {
                 <tr>
                     <td colspan="2">
                         <div style="padding-left:200px">                           
-                            <input type="submit" class="save" name="btnSumit" value="Save" onclick="return validate();"/>		                               
+                            <input type="submit" class="save" name="btnSumit" value="重置" onclick="return validate();"/>		                               
 
-                            <input type="reset" class="cancel" name="btnCancel" value="Reset"/>                                                      
+                            <input type="reset" class="cancel" name="btnCancel" value="上载"/>                                                      
 
                         </div>
                     </td>

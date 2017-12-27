@@ -32,7 +32,7 @@ if(isset($_POST[btnSumit])){
 <form action="" method="post" name="form_add_dm_ks">
 <div id="admin_navigation">
 	<div style="float:left;width:80%">
-		<h3>album : <?php echo (isset($_GET[idAlbum]) ? "Cập nhật" : "Thêm mới")?></h3>
+		<h3>album : <?php echo (isset($_GET[idAlbum]) ? "Cập nhật" : "新加")?></h3>
     </div>
      <div style="float:left;width:5%;padding-top:5px">
         <a href="index.php?com=thumuc"><input type="button" class="new" name="btnNew" value=""/></a><br />		
@@ -40,11 +40,11 @@ if(isset($_POST[btnSumit])){
     </div>
 	<div style="float:left;width:5%;padding-top:5px">
     	<input type="submit" class="save" name="btnSumit" value=""/><br />		
-        <span>Save</span>
+        <span>重置</span>
     </div>
     <div style="float:left;width:5%;padding-top:5px">
     	<input type="reset" class="cancel" name="btnCancel" value=""/><br />		
-        <span>Reset</span>
+        <span>上载</span>
     </div>
     <div class="clr"></div>
 </div>
@@ -83,7 +83,7 @@ if(isset($_POST[btnSumit])){
                                 <th scope="col" class="rounded-company"></th>       
                                 <th scope="col" class="rounded" align="center">ID</th>
                                 <th scope="col" class="rounded" align="left">Tên album</th> 
-                                <th scope="col" class="rounded" align="left">Người tạo</th>                                  
+                                <th scope="col" class="rounded" align="left">编入者</th>                                  
                                 <th scope="col" class="rounded">回復更新</th>
                                 <th scope="col" class="rounded-q4">刪除</th>
                             </tr>

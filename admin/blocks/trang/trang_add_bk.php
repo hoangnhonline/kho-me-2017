@@ -133,7 +133,7 @@ if (isset($_POST[btnSumit])) {
 <form action="" method="post" name="form_add_dm_ks">
     <div>
         <div>
-            <h3>trang : <?php echo (isset($_GET['idTrang']) ? "Cập nhật" : "Thêm mới") ?></h3>
+            <h3>trang : <?php echo (isset($_GET['idTrang']) ? "Cập nhật" : "新加") ?></h3>
         </div>    
         <div class="clr"></div>
     </div>
@@ -172,7 +172,7 @@ if (isset($_POST[btnSumit])) {
                     </td>                        
                 </tr> 
                 <tr class="left">
-                    <td>Tên sách</td>
+                    <td>书名</td>
                     <td>
 <?php if ($row_ct['idSach']) { ?>
                             <select name='idSach' id="idSach" style="width:400px">
@@ -224,7 +224,7 @@ if (isset($_POST[btnSumit])) {
                                     skin:'office2003',
                                     height:300,
                                     toolbar:[
-                                        ['Source','-','Save','NewPage','Preview','-','Templates'],
+                                        ['Source','-','重置','NewPage','Preview','-','Templates'],
                                         ['Cut','Copy','Paste','PasteText','PasteFromWord','-','Print'],
                                         ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],                                        
                                         ['Bold','Italic','Underline','Strike','-','Subscript','Superscript'],
@@ -243,9 +243,9 @@ if (isset($_POST[btnSumit])) {
                 <tr>
                     <td colspan="2" align="left">
                         <div style="padding-left:200px">                           
-                                <input type="submit" class="save" name="btnSumit" value="Save" onclick="return validate();"/>		                               
+                                <input type="submit" class="save" name="btnSumit" value="重置" onclick="return validate();"/>		                               
                           
-                                <input type="reset" class="cancel" name="btnCancel" value="Reset"/>                                                      
+                                <input type="reset" class="cancel" name="btnCancel" value="上载"/>                                                      
                            
                         </div>
                     </td>

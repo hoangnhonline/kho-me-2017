@@ -128,7 +128,7 @@ if(isset($_GET['idTrang']) > 0){
                                 </select>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <span style="color:red;font-weight: bold">PageID</span> <input type="text" name="idTrang" id="idTrang" value="<?php echo isset($_GET['idTrang']) ? $_GET['idTrang'] : ""; ?>"/>
-                                <input type="submit" name="btnSubmit" id="btnSubmit" value="  Xem " />
+                                <input type="submit" name="btnSubmit" id="btnSubmit" value="  看 " />
                                 <br /><br />
                                 <input type="hidden" name="com" value="trang_list"  />
                             </form>
@@ -140,7 +140,7 @@ if(isset($_GET['idTrang']) > 0){
                     <tr>
                         <th width="1%"></th>
                         <th align="center" width="1%">PageID</th>
-                        <th align="left">Tên sách </th>
+                        <th align="left">书名 </th>
                         <th align="left">類目 </th>
                         <th align="center" width="1%">順序</th>
                         <th width="1%">移動</th>

@@ -57,7 +57,7 @@ if(isset($_POST['btnSumit'])){
 <form action="" method="post" name="form_add_dm_ks">
 <div>
 	<div>
-		<h3>pháp âm: <?php echo (isset($_GET['idPA']) ? "Cập nhật" : "Thêm mới")?></h3>
+		<h3>pháp âm: <?php echo (isset($_GET['idPA']) ? "Cập nhật" : "新加")?></h3>
     </div>    
     <div class="clr"></div>
 </div>

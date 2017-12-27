@@ -40,9 +40,9 @@ if (isset($_POST['btnSubmit'])) {
                     <td>&nbsp;</td>
                         <td>
                                               
-                            <input type="submit" class="save" name="btnSubmit" value="Save"/>		                               
+                            <input type="submit" class="save" name="btnSubmit" value="重置"/>		                               
 
-                            <input type="reset" class="cancel" name="btnCancel" value="Reset"/>                                                      
+                            <input type="reset" class="cancel" name="btnCancel" value="上载"/>                                                      
 
                     
                             </td>

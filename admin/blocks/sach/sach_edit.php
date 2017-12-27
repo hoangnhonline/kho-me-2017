@@ -39,7 +39,7 @@ if (isset($_POST['btnSubmit'])) {
                     </td>
                 </tr>
                 <tr class="left">
-                    <td>Tên sách</td>
+                    <td>书名</td>
                     <td><input type="text" name="TenSach" id="TenSach" class="tf" value="<?php echo $row['TenSach']; ?>" style="width: 400px;height: 25px" />
                         <span class="error"><?php echo $loi['TenSach']; ?></span>
                     </td>
@@ -94,9 +94,9 @@ if (isset($_POST['btnSubmit'])) {
                     <td>&nbsp;</td>
                         <td>
 
-                            <input type="submit" class="save" name="btnSubmit" value="Save"/>
+                            <input type="submit" class="save" name="btnSubmit" value="重置"/>
 
-                            <input type="reset" class="cancel" name="btnCancel" value="Reset"/>
+                            <input type="reset" class="cancel" name="btnCancel" value="上载"/>
 
 
                             </td>
@@ -117,7 +117,7 @@ if (isset($_POST['btnSubmit'])) {
             </div>
             <div class="clear"></div>
             <button style="margin-top: 10px;"class="button_colour" type="submit" id="btn_upload_images">
-                <a href="#">Upload</a>
+                <a href="#">上传图片</a>
             </button>
         </div>
 
@@ -146,7 +146,7 @@ $(function(){
 		$("#btnUpload").click(function(){
 			$("#div_upload" ).dialog({
 				modal: true,
-				title: 'Upload images',
+				title: '成功上传',
 				width: 300,
 				draggable: true,
 				resizable: false,

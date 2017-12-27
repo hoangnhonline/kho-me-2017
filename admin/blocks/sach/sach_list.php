@@ -103,7 +103,7 @@ $timduoc = mysql_num_rows($sach);
                                 &nbsp;&nbsp;&nbsp;
                                 依書名搜尋/書籍ID<input type="text" name="tukhoa" id="tukhoa" width="150" value="<?php echo isset($_GET['tukhoa']) ? $_GET['tukhoa'] : ""; ?>" />
 <?php } ?>
-                            <input type="submit" name="btnSubmit" id="btnSubmit" value="  Xem " />
+                            <input type="submit" name="btnSubmit" id="btnSubmit" value="  看 " />
 
                             <input type="hidden" name="com" value="sach_list"  />
                         </form>
@@ -115,14 +115,14 @@ $timduoc = mysql_num_rows($sach);
                 <tr>
                     <th with="1%"></th>
                     <th with="1%">ID</th>
-                    <th align="left" width="50%">Tên sách </th>
+                    <th align="left" width="50%">书名 </th>
                     <th align="left" width="10%">封面照片 </th>
                     <th>順序</th>
                     <th width="1%">狀態</th>
                     <th align="left"> 資料夾 </th>
-                    <th> Người tạo </th>
+                    <th> 编入者 </th>
                     <th align="left" width="15%"> 譯者-作者 </th>
-                    <th align="left"> Ngày tạo </th>
+                    <th align="left"> 编入日期 </th>
                     <th width="1%">移動</th>
                 </tr>
             </thead>
@@ -183,10 +183,10 @@ $timduoc = mysql_num_rows($sach);
                         <?php }
                     } else {
                         ?>
-                        <tr> <td colspan="11"> Không tìm thấy kết quả nào !!!</td></tr>
+                        <tr> <td colspan="11"> 相册类型 !!!</td></tr>
     <?php }
 } else { ?>
-                    <tr> <td colspan="11" align="center"><span style="font-size: 15px;color:red;"> 選擇資料夾 để xem sách !!!</td></tr>
+                    <tr> <td colspan="11" align="center"><span style="font-size: 15px;color:red;"> 選擇資料夾 选择看书！</td></tr>
 <?php } ?>
             </tbody>
         </table>

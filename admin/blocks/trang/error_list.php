@@ -71,11 +71,11 @@ $list_trang = $trang->Error_List($limit,$offset);
     </div>
 	<div style="float:left;width:5%;padding-top:5px">
     	<input type="submit" class="save" name="btnSumit" value=""/><br />		
-        <span>Save</span>
+        <span>重置</span>
     </div>
     <div style="float:left;width:5%;padding-top:5px">
     	<input type="reset" class="cancel" name="btnCancel" value=""/><br />		
-        <span>Reset</span>
+        <span>上载</span>
     </div>
     <div class="clr"></div>
 </div>
@@ -120,7 +120,7 @@ $list_trang = $trang->Error_List($limit,$offset);
                                     <?php } ?>
                                 </select> 
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                         
-                                 <input type="submit" name="btnSubmit" id="btnSubmit" value="  Xem " />
+                                 <input type="submit" name="btnSubmit" id="btnSubmit" value="  看 " />
                                                                   <br /><br />
                                     <input type="hidden" name="com" value="trang_list"  />
                                  </form>                                 
@@ -131,7 +131,7 @@ $list_trang = $trang->Error_List($limit,$offset);
                             </tr>
                             <tr style="color:white;background-color:#06F;height:30px">
                                 <th scope="col" class="rounded-company"></th>
-								<th scope="col" class="rounded">Tên sách </th>
+								<th scope="col" class="rounded">书名 </th>
                                 <th scope="col" class="rounded">類目 </th>  
                                 <th scope="col" class="rounded">順序 trang  </th>                              
                                 <th scope="col" class="rounded">回復更新</th>
