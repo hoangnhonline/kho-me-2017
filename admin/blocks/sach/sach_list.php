@@ -178,7 +178,7 @@ $timduoc = mysql_num_rows($sach);
                                     <a href="index.php?com=sach_edit&amp;idSach=<?php echo $row['idSach'] ?>">
                                         <img class="lazy" data-original="../img/icons/user_edit.png" alt="回復更新" title="回復更新" border="0">
                                     </a>&nbsp;&nbsp;
-                                    <img class="linkxoa" idSach="<?php echo $row['idSach'] ?>" class="lazy" data-original="../img/icons/trash.png" alt="刪除 sách" title="刪除 sách" border="0">
+                                    <img class="linkxoa lazy" idSach="<?php echo $row['idSach'] ?>" data-original="../img/icons/trash.png" alt="刪除 sách" title="刪除 sách" border="0">
                                 </td>
                         <?php }
                     } else {
