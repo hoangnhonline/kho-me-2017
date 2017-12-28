@@ -220,7 +220,7 @@ if (isset($_POST[btnSumit])) {
                             <script type="text/javascript">
                                 var editor = CKEDITOR.replace( 'NoiDung',{
                                     uiColor : '#9AB8F3',
-                                    language:'vi',
+                                    language:'en',
                                     skin:'office2003',
                                     height:300,
                                     toolbar:[
