@@ -98,7 +98,7 @@ CKEDITOR.lang['vi'] =
 		generalTab		: 'Tab chung',
 		advancedTab		: 'Tab mở rộng',
 		validateNumberFailed : 'Giá trị này không phải là số.',
-		confirmNewPage	: 'Mọi thay đổi không được lưu lại, nội dung này sẽ bị mất. Bạn có chắc chắn muốn tải một trang mới?',
+		confirmNewPage	: 'Mọi thay đổi không được lưu lại, 内容 này sẽ bị mất. Bạn có chắc chắn muốn tải một trang mới?',
 		confirmCancel	: 'Một vài tùy chọn đã bị thay đổi. Bạn có chắc chắn muốn đóng hộp thoại?',
 		options			: 'Tùy chọn',
 		target			: 'Đích đến',
@@ -182,7 +182,7 @@ CKEDITOR.lang['vi'] =
 		langCode			: 'Mã ngôn ngữ',
 		tabIndex			: 'Chỉ số của Tab',
 		advisoryTitle		: 'Nhan đề hướng dẫn',
-		advisoryContentType	: 'Nội dung hướng dẫn',
+		advisoryContentType	: '内容 hướng dẫn',
 		cssClasses		: 'Lớp Stylesheet',
 		charset			: 'Bảng mã của tài nguyên được liên kết đến',
 		styles			: 'Kiểu (style)',
@@ -192,7 +192,7 @@ CKEDITOR.lang['vi'] =
 		anchorId			: 'Theo định danh thành phần',
 		emailAddress		: 'Thư điện tử',
 		emailSubject		: 'Tiêu đề thông điệp',
-		emailBody		: 'Nội dung thông điệp',
+		emailBody		: '内容 thông điệp',
 		noAnchors		: '(Không có điểm neo nào trong tài liệu)',
 		noUrl			: 'Hãy đưa vào đường dẫn liên kết (URL)',
 		noEmail			: 'Hãy đưa vào địa chỉ thư điện tử'
@@ -264,7 +264,7 @@ CKEDITOR.lang['vi'] =
 		widthPc		: 'Phần trăm (%)',
 		widthUnit	: 'Đơn vị',
 		cellSpace	: 'Khoảng cách giữa các ô',
-		cellPad		: 'Khoảng đệm giữ ô và nội dung',
+		cellPad		: 'Khoảng đệm giữ ô và 内容',
 		caption		: 'Đầu đề',
 		summary		: 'Tóm lược',
 		headers		: 'Đầu đề',
@@ -278,7 +278,7 @@ CKEDITOR.lang['vi'] =
 		invalidWidth	: 'Chiều rộng của bảng phải là một số nguyên.',
 		invalidHeight	: 'Chiều cao của bảng phải là một số nguyên.',
 		invalidCellSpacing	: 'Khoảng cách giữa các ô phải là một số nguyên.',
-		invalidCellPadding	: 'Khoảng đệm giữa ô và nội dung phải là một số nguyên.',
+		invalidCellPadding	: 'Khoảng đệm giữa ô và 内容 phải là một số nguyên.',
 
 		cell :
 		{
@@ -531,8 +531,8 @@ CKEDITOR.lang['vi'] =
 		title		: 'Dán',
 		cutError	: 'Các thiết lập bảo mật của trình duyệt không cho phép trình biên tập tự động thực thi lệnh cắt. Hãy sử dụng bàn phím cho lệnh này (Ctrl/Cmd+X).',
 		copyError	: 'Các thiết lập bảo mật của trình duyệt không cho phép trình biên tập tự động thực thi lệnh sao chép. Hãy sử dụng bàn phím cho lệnh này (Ctrl/Cmd+C).',
-		pasteMsg	: 'Hãy dán nội dung vào trong khung bên dưới, sử dụng tổ hợp phím (<STRONG>Ctrl/Cmd+V</STRONG>) và nhấn vào nút <STRONG>Đồng ý</STRONG>.',
-		securityMsg	: 'Do thiết lập bảo mật của trình duyệt nên trình biên tập không thể truy cập trực tiếp vào nội dung đã sao chép. Bạn cần phải dán lại nội dung vào cửa sổ này.',
+		pasteMsg	: 'Hãy dán 内容 vào trong khung bên dưới, sử dụng tổ hợp phím (<STRONG>Ctrl/Cmd+V</STRONG>) và nhấn vào nút <STRONG>Đồng ý</STRONG>.',
+		securityMsg	: 'Do thiết lập bảo mật của trình duyệt nên trình biên tập không thể truy cập trực tiếp vào 内容 đã sao chép. Bạn cần phải dán lại 内容 vào cửa sổ này.',
 		pasteArea	: 'Khu vực dán'
 	},
 
@@ -553,10 +553,10 @@ CKEDITOR.lang['vi'] =
 	templates :
 	{
 		button			: 'Mẫu dựng sẵn',
-		title			: 'Nội dung Mẫu dựng sẵn',
+		title			: '内容 Mẫu dựng sẵn',
 		options : 'Tùy chọn mẫu dựng sẵn',
-		insertOption	: 'Thay thế nội dung hiện tại',
-		selectPromptMsg	: 'Hãy chọn mẫu dựng sẵn để mở trong trình biên tập<br>(nội dung hiện tại sẽ bị mất):',
+		insertOption	: 'Thay thế 内容 hiện tại',
+		selectPromptMsg	: 'Hãy chọn mẫu dựng sẵn để mở trong trình biên tập<br>(内容 hiện tại sẽ bị mất):',
 		emptyListMsg	: '(Không có mẫu dựng sẵn nào được định nghĩa)'
 	},
 

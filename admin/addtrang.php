@@ -8,7 +8,7 @@
         </td>
     </tr>
     <tr>
-        <td style="white-space: nowrap;width: 150px" valign="top"> <br />Nội dung</td>
+        <td style="white-space: nowrap;width: 150px" valign="top"> <br />内容</td>
         <td> <br /><div style="width:800px;overflow: hidden" >
                 <textarea class="meta" name="NoiDung" id="NoiDung"></textarea>
                 <script type="text/javascript">
@@ -37,9 +37,9 @@
     <tr>
         <td colspan="2" align="left">
             <div style="padding-left:200px">
-                     <br /><input type="button" class="save" name="btnSumit" id="btnThemTrang" value="Save"/>
+                     <br /><input type="button" class="save" name="btnSumit" id="btnThemTrang" value="重置"/>
 
-                    <input type="reset" class="cancel" name="btnCancel" value="Reset"/>
+                    <input type="reset" class="cancel" name="btnCancel" value="上载"/>
 
             </div>
         </td>

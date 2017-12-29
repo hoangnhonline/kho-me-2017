@@ -102,7 +102,7 @@ $list_trang = $trang->Error_List($limit,$offset);
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 書籍 
                                 <select name='idSachs' id="idSach">
-                                    <option value='0'>Chọn sách</option>
+                                    <option value='0'>选择书籍</option>
                                     <?php $sach1 = $s->Sach_List();
                                     while($row2 =  mysql_fetch_assoc($sach1)){
                                     ?>

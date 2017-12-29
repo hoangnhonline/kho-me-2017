@@ -38,7 +38,7 @@ $(function(){
 
 <div>
 	<div>
-		<h3>類目 : <?php echo (isset($_GET['idDM']) ? "Cập nhật" : "新加")?></h3>
+		<h3>類目 : <?php echo (isset($_GET['idDM']) ? "回復更新" : "新加")?></h3>
     </div>
     <div class="clr"></div>
 </div>
@@ -64,7 +64,7 @@ $(function(){
                     	<td>书名</td>
                         <td>
 							<select name='idSach' id="isSach">
-								<option value='0'>Chọn sách</option>
+								<option value='0'>选择书籍</option>
 								<?php $sachss = $s->Sach_List();
 								while($row =  mysql_fetch_assoc($sachss)){
 								?>

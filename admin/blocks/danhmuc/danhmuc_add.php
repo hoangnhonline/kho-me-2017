@@ -32,7 +32,7 @@ if(isset($_POST[btnSumit])){
                     	<td>书名</td>
                         <td>
 							<select name='idSach'>
-								<option value='0'>Chọn sách</option>
+								<option value='0'>选择书籍</option>
 								<?php $sach = $s->Sach_List();
 								while($row =  mysql_fetch_assoc($sach)){
 								?>

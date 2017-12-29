@@ -80,7 +80,7 @@ if (isset($_POST['btnSumit'])) {
 <form action="" method="post" name="form_add_dm_ks">
     <div>
         <div>
-            <h3>album : <?php echo (isset($_GET['idDM']) ? "Cập nhật" : "新加") ?></h3>
+            <h3>album : <?php echo (isset($_GET['idDM']) ? "回復更新" : "新加") ?></h3>
         </div>
       
         <div class="clr"></div>
@@ -108,7 +108,7 @@ if (isset($_POST['btnSumit'])) {
                         <td  width="150px">选择书籍</td>
                         <td>
                             <select name='idSach' id="isSach" style="width: 400px">
-                                <option value='0'>Chọn sách</option>
+                                <option value='0'>选择书籍</option>
 <?php
 $sachss = $s->Sach_List();
 while ($row = mysql_fetch_assoc($sachss)) {
@@ -161,7 +161,7 @@ while ($row = mysql_fetch_assoc($MucLuc)) {
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 选择书籍
                                 <select name='idSachs' id="isSach" style="width: 400px">
-                                    <option value='0'>Chọn sách</option>
+                                    <option value='0'>选择书籍</option>
 <?php
 $sachs = $s->Sach_List();
 while ($row = mysql_fetch_assoc($sachs)) {

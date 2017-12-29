@@ -68,7 +68,7 @@ if ($com == "mucluc") {
         $TrangMin=$ml -> GetIdTrangMin($idML);
         
     } else {
-        $noidung = "Chưa có nội dung !";
+        $noidung = "Chưa có 内容 !";
     }
 
 

@@ -3,7 +3,7 @@ require_once "admin/lib/class.sach.php";
 $s = new sach;
 $idML = $_GET[idML];settype($idML,"int");
 $sach  = $s-> List_Sach($idML);
-echo "<option value=0>Chọn sách</option>";
+echo "<option value=0>选择书籍</option>";
 while($row = mysql_fetch_assoc($sach)){
 ?>    
     <option <?php if($_GET[idSach]==$row['idSach']) echo "selected" ;?>  value="<?php echo $row[idSach]; ?>">

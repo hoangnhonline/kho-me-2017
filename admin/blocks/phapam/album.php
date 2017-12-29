@@ -32,7 +32,7 @@ if(isset($_POST[btnSumit])){
 <form action="" method="post" name="form_add_dm_ks">
 <div id="admin_navigation">
 	<div style="float:left;width:80%">
-		<h3>album : <?php echo (isset($_GET[idAlbum]) ? "Cập nhật" : "新加")?></h3>
+		<h3>album : <?php echo (isset($_GET[idAlbum]) ? "回復更新" : "新加")?></h3>
     </div>
      <div style="float:left;width:5%;padding-top:5px">
         <a href="index.php?com=thumuc"><input type="button" class="new" name="btnNew" value=""/></a><br />		

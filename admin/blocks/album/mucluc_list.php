@@ -96,7 +96,7 @@ $(function(){
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 書籍 
                                 <select name='idSachs' id="isSach">
-                                    <option value='0'>Chọn sách</option>
+                                    <option value='0'>选择书籍</option>
                                     <?php $sachsss = $s->Sach_List();
                                     while($row =  mysql_fetch_assoc($sachsss)){
                                     ?>

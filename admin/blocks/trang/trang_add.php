@@ -96,7 +96,7 @@ if (isset($_POST['btnSumit'])) {
             flg = false;
         }else{
             if($('#idSach').val()==0){
-                alert('Chưa chọn sách !');
+                alert('Chưa 选择书籍 !');
                 flg = false;
             }else{
                 if($('#idDM').val()==0){
@@ -139,7 +139,7 @@ if (isset($_POST['btnSumit'])) {
 <form action="" method="post" name="form_add_dm_ks">
     <div>
         <div>
-            <h3>頁面 : <?php echo (isset($_GET['idTrang']) ? "Cập nhật" : "新加") ?></h3>
+            <h3>頁面 : <?php echo (isset($_GET['idTrang']) ? "回復更新" : "新加") ?></h3>
         </div>    
         <div class="clr"></div>
     </div>
@@ -182,12 +182,12 @@ if (isset($_POST['btnSumit'])) {
                     <td>
 <?php if (isset($row_ct['idSach'])) { ?>
                             <select name='idSach' id="idSach" style="width:400px">
-                                <option value='0'>Chọn sách</option>
+                                <option value='0'>选择书籍</option>
 
                             </select>
 <?php } else { ?>
                             <select name='idSach' id="idSach" style="width:400px">
-                                <option value='0'>Chọn sách</option>
+                                <option value='0'>选择书籍</option>
 
                             </select>
 <?php } ?>    
@@ -198,12 +198,12 @@ if (isset($_POST['btnSumit'])) {
                     <td>
 <?php if (isset($row_ct['idDML'])) { ?>
                             <select name='idDM' id="idDM" style="width:400px">
-                                <option value='0'>Chọn 類目</option>
+                                <option value='0'>选择類目</option>
 
                             </select>
 <?php } else { ?>
                             <select name='idDM' id="idDM" style="width:400px">
-                                <option value='0'>Chọn 類目</option>
+                                <option value='0'>选择類目</option>
 
                             </select>
 <?php } ?>   

@@ -57,7 +57,7 @@ if(isset($_POST['btnSumit'])){
 <form action="" method="post" name="form_add_dm_ks">
 <div>
 	<div>
-		<h3>法音: <?php echo (isset($_GET['idPA']) ? "Cập nhật" : "新加")?></h3>
+		<h3>法音: <?php echo (isset($_GET['idPA']) ? "回復更新" : "新加")?></h3>
     </div>    
     <div class="clr"></div>
 </div>

@@ -77,7 +77,7 @@ if ($com == "mucluc") {
         
         
     } else {
-        $noidung = "Chưa có nội dung !";
+        $noidung = "Chưa có 内容 !";
     }
 
 

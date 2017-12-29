@@ -224,7 +224,7 @@ $timduoc = mysql_num_rows($sach);
                       async: false,
                       data: {"str_order":$('#str_order').val(),'idML':$('#idML').val()},
                       success: function(data){
-                          alert('Cập nhật thành công');
+                          alert('回復更新 thành công');
                           window.location.reload();
                       }
                   });

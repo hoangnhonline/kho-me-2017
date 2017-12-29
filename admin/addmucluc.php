@@ -7,7 +7,7 @@
         </td>
     </tr>
     <tr>
-        <td style="white-space: nowrap;width: 150px" valign="top"> <br />Nội dung</td>
+        <td style="white-space: nowrap;width: 150px" valign="top"> <br />内容</td>
         <td> <br />
         </td>
     </tr>

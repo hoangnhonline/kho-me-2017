@@ -118,7 +118,7 @@ if(isset($_GET['idTrang']) > 0){
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 書籍
                                 <select name='idSachs' id="idSach" class="tacgia">
-                                    <option value='0'>Chọn sách</option>
+                                    <option value='0'>选择书籍</option>
 
                                 </select>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
