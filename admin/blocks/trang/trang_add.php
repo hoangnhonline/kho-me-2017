@@ -211,7 +211,7 @@ if (isset($_POST['btnSumit'])) {
                 </tr>                       
                 <tr class="left">
                     <td>&nbsp;</td>                        
-                    <td><span id="addtrang" style="cursor:pointer;text-transform: uppercase;color: blue;font-weight: bold">Thêm trang</span></td>
+                    <td><span id="addtrang" style="cursor:pointer;text-transform: uppercase;color: blue;font-weight: bold">加页数</span></td>
                 </tr>                                      
             </table>
 
@@ -260,7 +260,7 @@ if (isset($_POST['btnSumit'])) {
 
             $("#load_add_trang").dialog({
                     modal:true,
-                    title:'Thêm nội dung',
+                    title:'加内容',
                     width:900,
                     draggable:false,
                     resizable:false,

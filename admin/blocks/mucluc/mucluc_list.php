@@ -150,7 +150,7 @@ $sach = $dm->DanhMuc_List($idMLs, $idSachs, $limit, $offset);
                             </td>  
                             <td align="center"><?php echo $sotrang; ?></td>
                             <td class="action">
-                                <a href="index.php?com=trang_add&idDM=<?php echo $row['idDM']; ?>">Thêm trang</a>&nbsp;&nbsp;
+                                <a href="index.php?com=trang_add&idDM=<?php echo $row['idDM']; ?>">加页数</a>&nbsp;&nbsp;
                                 <a href="index.php?com=trang_list&amp;idDMs=<?php echo $row['idDM']; ?>">
                                     <img src="img/icons/detail.png" alt="Danh sách trang" title="Danh sách trang" border="0">
                                 </a>&nbsp;&nbsp;
@@ -165,7 +165,7 @@ $sach = $dm->DanhMuc_List($idMLs, $idSachs, $limit, $offset);
                     </tr>
                     <?php } else{ ?>
                      <tr>
-                        <td colspan="8"><span style="color:red;font-weight: bold;font-size: 15px">Chọn sách để xem 類目</span></td>
+                        <td colspan="8"><span style="color:red;font-weight: bold;font-size: 15px">选择书籍以查看 類目</span></td>
                     </tr>
                     <?php } ?>
                 </tbody>

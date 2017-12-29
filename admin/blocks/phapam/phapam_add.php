@@ -57,7 +57,7 @@ if(isset($_POST['btnSumit'])){
 <form action="" method="post" name="form_add_dm_ks">
 <div>
 	<div>
-		<h3>pháp âm: <?php echo (isset($_GET['idPA']) ? "Cập nhật" : "新加")?></h3>
+		<h3>法音: <?php echo (isset($_GET['idPA']) ? "Cập nhật" : "新加")?></h3>
     </div>    
     <div class="clr"></div>
 </div>
@@ -66,15 +66,15 @@ if(isset($_POST['btnSumit'])){
 	<div id="main_left">    	
             	<table>     
                     <tr class="left">
-                    	<td width="150px">Tiêu đề</td>
+                    	<td width="150px">标题</td>
                         <td width="181"><input type="text" name="TieuDe" id="TieuDe" class="tf" value="<?php echo isset($row_ct['TieuDe']) ? $row_ct['TieuDe'] : ""; ?>"  style="width: 400px;height: 25px" />
                         	<span class="error"><?php echo isset($loi['TieuDe']) ? $loi['TieuDe'] : "";?></span>
                         </td>                        
                     </tr>      
                     <tr>   
-                    <td>Hình đại diện</td>
+                    <td>图片代表</td>
                     <td><input type="text" name="HinhMH" id="HinhMH" class="tf" value="<?php echo isset($row_ct['HinhMH']) ?  $row_ct['HinhMH'] : ""; ?>"/>
-                        <input type="button" name="btnChonFile" value="Chọn hình" onclick="BrowseServer('Images:/','HinhMH')"  />
+                        <input type="button" name="btnChonFile" value="选择图片" onclick="BrowseServer('Images:/','HinhMH')"  />
                         <div id="preview">
                             <div id="thumbnails"></div>
                         </div>   
@@ -107,8 +107,8 @@ if(isset($_POST['btnSumit'])){
                              <tr>
                                 <th scope="col" class="rounded-company"></th>       
                                <th scope="col" class="rounded">idPA</th>
-                                <th scope="col" class="rounded" align="left">Tiêu đề</th> 
-                                <th scope="col" class="rounded">Hình đại diện</th>                               
+                                <th scope="col" class="rounded" align="left">标题</th> 
+                                <th scope="col" class="rounded">图片代表</th>                               
                                 <th scope="col" class="rounded">回復更新</th>
                                 <th scope="col" class="rounded-q4">刪除</th>
                             </tr>

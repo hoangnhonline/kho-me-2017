@@ -55,14 +55,14 @@ if(isset($_POST[btnSumit])){
         	<legend>Thông tin chi tiết</legend>
             	<table>
                     <tr class="left">
-                    	<td>Tên album</td>
+                    	<td>相册名称</td>
                         <td><input type="text" name="TenAlbum" id="TenAlbum" class="tf" value="<?php echo $row['TenAlbum'];?>" />
                         	<span class="error"><?php echo $loi[TenAlbum];?></span>
                         </td>                        
                     </tr>   
-                    <td>Hình đại diện</td>
+                    <td>图片代表</td>
                     <td><input type="text" name="UrlHinh" id="UrlHinh" class="tf" value="<?php echo $row[UrlHinh]?>"/>
-                        <input type="button" name="btnChonFile" value="Chọn hình" onclick="BrowseServer('Images:/','UrlHinh')"  />
+                        <input type="button" name="btnChonFile" value="选择图片" onclick="BrowseServer('Images:/','UrlHinh')"  />
                         <div id="preview">
                             <div id="thumbnails"></div>
                         </div>   
@@ -82,7 +82,7 @@ if(isset($_POST[btnSumit])){
                             <tr style="color:white;background-color:#06F;height:30px">
                                 <th scope="col" class="rounded-company"></th>       
                                 <th scope="col" class="rounded" align="center">ID</th>
-                                <th scope="col" class="rounded" align="left">Tên album</th> 
+                                <th scope="col" class="rounded" align="left">相册名称</th> 
                                 <th scope="col" class="rounded" align="left">编入者</th>                                  
                                 <th scope="col" class="rounded">回復更新</th>
                                 <th scope="col" class="rounded-q4">刪除</th>

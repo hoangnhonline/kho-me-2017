@@ -63,7 +63,7 @@ if(isset($_POST['btnSumit'])){
                         </td>                        
                     </tr>     
                      <tr class="left">
-                    	<td class="nowrap">Ghi chú</td>
+                    	<td class="nowrap">注意</td>
                         <td><textarea id="GhiChu" name="GhiChu"  style="width: 400px;height: 70px">
                         <?php echo trim(strip_tags($row['GhiChu'])); ?>
                         </textarea>
@@ -72,7 +72,7 @@ if(isset($_POST['btnSumit'])){
    
 
                 <tr>
-                    <td class="nowrap">Nội dung</td>
+                    <td class="nowrap">内容</td>
                     <td><div style="width:900px;overflow: hidden">
                         <textarea class="meta" name="NoiDung" id="NoiDung"><?php echo $row[NoiDung]?></textarea>
                         <script type="text/javascript">

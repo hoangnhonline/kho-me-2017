@@ -42,14 +42,14 @@ if(isset($_POST[btnSumit])){
     
             	<table>
                     <tr class="left">
-                    	<td>Tên album</td>
+                    	<td>相册名称</td>
                         <td><input type="text" name="TenAlbum" id="TenAlbum" class="tf" value="<?php echo isset($row['TenAlbum']) ? $row['TenAlbum'] : "";?>" />
                         	<span class="error"><?php echo isset($loi['TenAlbum']) ? $loi['TenAlbum'] : "";?></span>
                         </td>                        
                     </tr>   
-                    <td>Hình đại diện</td>
+                    <td>图片代表</td>
                     <td><input type="text" name="UrlHinh" id="UrlHinh" class="tf" value="<?php echo isset($row['UrlHinh']) ? $row['UrlHinh'] : "";?>"/>
-                        <input type="button" name="btnChonFile" value="Chọn hình" onclick="BrowseServer('Images:/','UrlHinh')"  />
+                        <input type="button" name="btnChonFile" value="选择图片" onclick="BrowseServer('Images:/','UrlHinh')"  />
                         <div id="preview">
                             <div id="thumbnails"></div>
                         </div>   
@@ -67,7 +67,7 @@ if(isset($_POST[btnSumit])){
                             <tr>
                                 <th scope="col" class="rounded-company"></th>       
                                 <th  align="center">ID</th>
-                                <th  align="left">Tên album</th> 
+                                <th  align="left">相册名称</th> 
                                 <th  align="left">编入者</th>                                  
                                 <th >回復更新</th>
                                 <th>刪除</th>

@@ -119,15 +119,15 @@ while ($row = mysql_fetch_assoc($sachss)) {
                         </td>
                     </tr>
                     <tr class="left">
-                        <td  width="150px">Tên album</td>
+                        <td  width="150px">相册名称</td>
                         <td><input type="text" name="TenAlbum" id="TenAlbum" class="tf" value="<?php echo isset($row_ct['TenAlbum']) ? $row_ct['TenAlbum'] : ""; ?>" style="width: 400px;height: 25px"  />
                             <span class="error"><?php echo isset($loi['DanhMuc']) ? $loi['DanhMuc'] : ""; ?></span>
                         </td>
                     </tr>
                     <tr>
-                        <td  width="150px">Hình đại diện</td>
+                        <td  width="150px">图片代表</td>
                         <td><input type="text" name="UrlHinh" id="UrlHinh" class="tf" value="<?php echo isset($row_ct['UrlHinh']) ? $row_ct['UrlHinh'] : ""; ?>"/>
-                            <input type="button" name="btnChonFile" value="Chọn hình" onclick="BrowseServer('Images:/','UrlHinh')"  />
+                            <input type="button" name="btnChonFile" value="选择图片" onclick="BrowseServer('Images:/','UrlHinh')"  />
                             <div id="preview">
                                 <div id="thumbnails"></div>
                             </div>
@@ -184,8 +184,8 @@ while ($row = mysql_fetch_assoc($sachs)) {
                         <th width="1%"> Album ID </th>
                         <th> 資料夾 </th>
                         <th> 选择书籍 </th>
-                        <th align="left">Tên Album </th>
-                        <th>Hình đại diện</th>
+                        <th align="left">相册名称 </th>
+                        <th>图片代表</th>
                         <th>回復更新</th>
                         <th>刪除</th>
                     </tr>

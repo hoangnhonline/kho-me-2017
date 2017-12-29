@@ -90,7 +90,7 @@ if(isset($_GET['idTrang']) > 0){
 <div>
     <div>
         <div style="width: 48%;float: left"><h3>頁面 : 詳見清單</h3></div>
-        <div style="width: 48%;float: left;text-align: right;padding-top: 20px;text-transform: uppercase;font-size: 15px;font-weight: bold"><a href="index.php?com=trang_add">Thêm trang</a></div>
+        <div style="width: 48%;float: left;text-align: right;padding-top: 20px;text-transform: uppercase;font-size: 15px;font-weight: bold"><a href="index.php?com=trang_add">加页数</a></div>
     </div>
 
     <div class="clr" style="clear: both"></div>

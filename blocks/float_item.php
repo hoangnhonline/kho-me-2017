@@ -127,13 +127,13 @@
               
             </ul></div><div class="jcarousel-prev jcarousel-prev-horizontal jcarousel-prev-disabled jcarousel-prev-disabled-horizontal" style="display: block;" disabled="disabled"></div><div class="jcarousel-next jcarousel-next-horizontal" style="display: block;"></div></div></div>
             </div><!-- list_phap_am -->
-            <span class="hidden" id="nut_hien_list">Xem danh sách pháp âm</span>
-            <span class="hidden" id="dang_nghe">Pháp âm đang nghe</span>
+            <span class="hidden" id="nut_hien_list">Xem danh sách 法音</span>
+            <span class="hidden" id="dang_nghe">法音 đang nghe</span>
             <div class="hidden" id="hien_phap_am"></div>
         </div> <!-- wrapper_phapam -->        
         
-        <a id="btn_bottom" class="btn_control_float" title="Nghe pháp âm" href="javascript:void(0)">
-            <img alt="icon ẩn hiện nghe pháp âm" src="img/icons/icon_up.gif">
+        <a id="btn_bottom" class="btn_control_float" title="Nghe 法音" href="javascript:void(0)">
+            <img alt="icon ẩn hiện nghe 法音" src="img/icons/icon_up.gif">
         </a>
     </div><!-- float_content -->
 </div><!-- item_bottom -->

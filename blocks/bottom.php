@@ -10,7 +10,7 @@
             <?php } ?>  
           </ul>
     </div>
-    <span id="nut_hien_list" style="display:none" >Xem danh sách pháp âm</span>
-    <span id="dang_nghe" style="display:none" >Pháp âm đang nghe</span>
+    <span id="nut_hien_list" style="display:none" >Xem danh sách 法音</span>
+    <span id="dang_nghe" style="display:none" >法音 đang nghe</span>
     <div id='hien_phap_am' style="display:none"></div>
 </div>

@@ -1,6 +1,6 @@
  <table>
     <tr class="left">
-        <td style="white-space: nowrap;width: 150px" valign="top">Ghi chú</td>
+        <td style="white-space: nowrap;width: 150px" valign="top">注意</td>
         <td><textarea id="GhiChu" name="GhiChu" style="width:600px;height: 40px">
             </textarea>
             <br />
@@ -42,7 +42,7 @@
                     async: false,
                     data: {'idML':idML,'idDM':idDM,'idSach':idSach,'GhiChu':GhiChu,'NoiDung':NoiDung},
                     success: function(data){
-                        alert('Thêm trang thành công. ID : ' + $.trim(data));
+                        alert('加页数 thành công. ID : ' + $.trim(data));
                         $('#GhiChu').val('');
                         CKEDITOR.instances['NoiDung'].setData('');
                         $('#btnThemTrang').removeAttr("disabled");

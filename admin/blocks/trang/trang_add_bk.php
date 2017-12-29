@@ -204,7 +204,7 @@ if (isset($_POST[btnSumit])) {
                     </td>                             
                 </tr>                       
                 <tr class="left">
-                    <td>Ghi chú</td>
+                    <td>注意</td>
                     <td><textarea id="GhiChu" name="GhiChu" style="width:400px;height: 70px">
 <?php echo (isset($row_ct['GhiChu']) ? $row_ct['GhiChu'] : $_SESSION['GhiChu']); ?>
                         </textarea>
@@ -214,7 +214,7 @@ if (isset($_POST[btnSumit])) {
 
 
                 <tr>
-                    <td>Nội dung</td>
+                    <td>内容</td>
                     <td><div style="width:900px;overflow: hidden">
                             <textarea class="meta" name="NoiDung" id="NoiDung"><?php echo (isset($row_ct['NoiDung']) ? $row_ct['NoiDung'] : $_SESSION['NoiDung']); ?></textarea>
                             <script type="text/javascript">
