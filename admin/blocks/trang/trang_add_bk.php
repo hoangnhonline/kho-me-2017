@@ -86,7 +86,7 @@ if (isset($_POST[btnSumit])) {
     function validate(){
         var flg = true;
         if($('#idML').val()==0){
-            alert('Chưa chọn thư mục !');
+            alert('Chưa 选择thư mục !');
             flg = false;
         }else{
             if($('#idSach').val()==0){
@@ -94,7 +94,7 @@ if (isset($_POST[btnSumit])) {
                 flg = false;
             }else{
                 if($('#idDM').val()==0){
-                    alert('Chưa chọn danh muc !');
+                    alert('Chưa 选择danh muc !');
                     flg = false;
                 }
             }
@@ -192,12 +192,12 @@ if (isset($_POST[btnSumit])) {
                     <td>
 <?php if ($row_ct['idDML']) { ?>
                             <select name='idDM' id="idDM" style="width:400px">
-                                <option value='0'>Chọn 類目</option>
+                                <option value='0'>选择類目</option>
 
                             </select>
 <?php } else { ?>
                             <select name='idDM' id="idDM" style="width:400px">
-                                <option value='0'>Chọn 類目</option>
+                                <option value='0'>选择類目</option>
 
                             </select>
 <?php } ?>   

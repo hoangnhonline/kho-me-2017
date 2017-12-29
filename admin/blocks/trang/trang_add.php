@@ -92,7 +92,7 @@ if (isset($_POST['btnSumit'])) {
     function validate(){
         var flg = true;
         if($('#idML').val()==0){
-            alert('Chưa chọn thư mục !');
+            alert('Chưa 选择thư mục !');
             flg = false;
         }else{
             if($('#idSach').val()==0){
@@ -100,7 +100,7 @@ if (isset($_POST['btnSumit'])) {
                 flg = false;
             }else{
                 if($('#idDM').val()==0){
-                    alert('Chưa chọn danh muc !');
+                    alert('Chưa 选择danh muc !');
                     flg = false;
                 }
             }

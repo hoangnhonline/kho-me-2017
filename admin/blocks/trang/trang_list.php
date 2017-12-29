@@ -124,7 +124,7 @@ if(isset($_GET['idTrang']) > 0){
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 類目
                                 <select name='idDMs' id="idDMs" class="tacgia">
-                                    <option value='0'>Chọn 類目</option>
+                                    <option value='0'>选择類目</option>
                                 </select>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <span style="color:red;font-weight: bold">PageID</span> <input type="text" name="idTrang" id="idTrang" value="<?php echo isset($_GET['idTrang']) ? $_GET['idTrang'] : ""; ?>"/>

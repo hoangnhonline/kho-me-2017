@@ -31,7 +31,7 @@
 
                                     编入者
                                     <select name='idUser'>
-                                        <option value='0'>Chọn người tạo</option>
+                                        <option value='0'>选择người tạo</option>
                                         <option <?php if ($_GET['idUser'] == 1) echo "selected"; ?> value='1'>Bé Bé</option>
 
                                     </select>

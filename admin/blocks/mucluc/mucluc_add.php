@@ -99,7 +99,7 @@ $(function(){
 <script type="text/javascript">
     function validate(){
         if($('#idML').val()==0 || $('#isSach').val()==0){
-           alert('Vui lòng chọn thư mục và sách!');
+           alert('Vui lòng 选择thư mục và sách!');
            return false;
        }
     }

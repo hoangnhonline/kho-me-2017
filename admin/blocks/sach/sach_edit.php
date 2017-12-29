@@ -28,7 +28,7 @@ if (isset($_POST['btnSubmit'])) {
                     <td width="150px">類目</td>
                     <td>
                         <select name='idML'>
-                            <option value='0'>Chọn 類目</option>
+                            <option value='0'>选择類目</option>
                             <?php
                             $MucLuc = $ml->MucLuc_List();
                             while ($row_ml = mysql_fetch_assoc($MucLuc)) {

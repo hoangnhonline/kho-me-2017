@@ -112,7 +112,7 @@ $list_trang = $trang->Error_List($limit,$offset);
                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
                                  類目 
                                  <select name='idDMs' id="idDMs">
-                                    <option value='0'>Chọn 類目</option>
+                                    <option value='0'>选择類目</option>
                                     <?php $danhmuc1 = $dm->DanhMuc_List();
                                     while($row3 =  mysql_fetch_assoc($danhmuc1)){
                                     ?>

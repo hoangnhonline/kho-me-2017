@@ -47,7 +47,7 @@ if(isset($_POST['btnSumit'])){
                     	<td class="nowrap">Tên danh mục</td>
                         <td>
 							<select name='idDM' id="idDM" style="width: 400px">
-								<option value='0'>Chọn danh mục</option>
+								<option value='0'>选择danh mục</option>
 								<?php $danhmuc = $dm->DanhMuc_List();
 								while($row_dm =  mysql_fetch_assoc($danhmuc)){
 								?>
