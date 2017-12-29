@@ -28,9 +28,9 @@ if(isset($_POST[btnSumit])){
                      <tr>
                          <td colspan="2">
                          <div style="padding-left:200px">                           
-                                <input type="submit" class="save" name="btnSumit" value="重置" onclick="return validate();"/>		                               
+                                <input type="submit" class="save" name="btnSumit" value="上载" onclick="return validate();"/>		                               
                           
-                                <input type="reset" class="cancel" name="btnCancel" value="上载"/>                                                      
+                                <input type="reset" class="cancel" name="btnCancel" value=" 重置"/>                                                      
                            
                         </div>
                              </td>
