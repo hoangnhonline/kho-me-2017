@@ -26,7 +26,7 @@ if ($tongsotrang > 0) {
     $row = mysql_fetch_assoc($sach);
     $noidung = $row[NoiDung];
 } else {
-    $noidung = "Chưa có nội dung !";
+    $noidung = "Chưa có 内容 !";
 }
 ?>  
 <?php if ($idTrang > $TrangMin) { ?>  
