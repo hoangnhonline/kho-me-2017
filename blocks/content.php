@@ -5,33 +5,19 @@
                     <img src="img/nen.jpg" class="img-responsive hidden-xs" alt="Nền VNBET" />  
                     <div class="col-sm-12 hidden-xs huongdan_sm">
                         <div class="col-sm-6 center">
-                            <a target="_blank"
-                             href="http://phapbao.org/loi-gioi-thieu-ve-phien-ban-dien-tu-kinh-sach-phat-giao-tieng-viet-viet-tat-vnbet/">
                             
-                                <img alt="Giới thiệu VNBET" src="img/img_gioithieu.png" height="40" class="hidden-xs">                                
-                            </a>
                         </div>
                         <div class="col-sm-6 center">
-                            <a target="_blank"
-                            href="http://phapbao.org/huong-dan-su-dung-kinh-sach-dien-tu-phat-giao-tieng-viet-2014/" >                          
-                                <img alt="Hướng dẫn sử dụng VNBET" src="img/img_huongdansudung.png" height="40" class="hidden-xs">                               
-                            </a>
+                           
                         </div>
                     </div> 
 
                     <div class="col-sm-12 visible-xs huongdan_xs">
                         <div class="col-sm-6" style="margin-bottom:10px">
-                            <a target="_blank"
-                             href="http://phapbao.org/loi-gioi-thieu-ve-phien-ban-dien-tu-kinh-sach-phat-giao-tieng-viet-viet-tat-vnbet/">                            
-                                
-                                <img alt="Giới thiệu VNBET" src="img/img_gioithieu.png" height="30" class="visible-xs">
-                            </a>
+                           
                         </div>
                         <div class="col-sm-6 center">
-                            <a target="_blank"
-                            href="http://phapbao.org/huong-dan-su-dung-kinh-sach-dien-tu-phat-giao-tieng-viet-2014/" >                                                          
-                                <img alt="Hướng dẫn sử dụng VNBET" src="img/img_huongdansudung.png" height="30" class="visible-xs">
-                            </a>
+                            
                         </div>
                     </div>
 					<div class="col-sm-12 hidden-sx" style="position: absolute;top:700px">

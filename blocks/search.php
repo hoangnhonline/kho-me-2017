@@ -13,13 +13,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			
 Tên sách
 <select name='idSach' id='idSach_loc'>
-    <option value='0'>Chọn sách</option>								
+    <option value='0'>選擇書籍</option>								
 </select>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			
 類目
 <select name='idML' id='idML_loc'>
-    <option value='0'>Chọn 類目</option>								
+    <option value='0'>選擇類目</option>								
 </select>
 
 <input type='button' id="btnLoc" value = 'Xem' name='btnSumit' />

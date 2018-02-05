@@ -11,19 +11,19 @@
     <div class="col-md-3">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;書籍
         <select id="idSach_loc" name="idSach">
-            <option value="0">Chọn sách</option>                
+            <option value="0">選擇書籍</option>                
         </select>
     </div>
 
     <div class="col-md-3">
           &nbsp;&nbsp;類目
           <select id="idML_loc" name="idML">
-              <option value="0">Chọn 類目</option>               
+              <option value="0">選擇類目</option>               
           </select>                        
     </div>
     <div class="col-md-3">          
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trang <select id="idTrang_loc" name="idTrang">
-              <option value="0">Chọn trang</option>               
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;頁面 <select id="idTrang_loc" name="idTrang">
+              <option value="0">選擇頁面</option>               
           </select>                                  
     </div>
       <div class="col-md-1">          
