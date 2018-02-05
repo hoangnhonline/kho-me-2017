@@ -91,7 +91,7 @@
                    while($row_trang = mysql_fetch_assoc($chitiet_trang)){
                         echo "<div class='content_page' thutu='".$row_trang['ThuTu']."' id='content_".$row_trang['ThuTu']."'>".stripslashes($row_trang['NoiDung'])."";
                         echo "</div>";
-                        echo "<p class='device_page'>* Trang ".$row_trang['ThuTu']." *<br/>
+                        echo "<p class='device_page'>* 頁面 ".$row_trang['ThuTu']." *<br/>
                                 <img src='img/hr.png' style='clear:both' alt='device'/>
                         </p>";
                     }
