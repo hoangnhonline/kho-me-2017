@@ -28,7 +28,7 @@
     </div>
       <div class="col-md-1">          
            <span class="hidden-lg">&nbsp;</span>
-          <input type='button' id="btnLoc" value='Xem' name='btnSumit' />
+          <input type='button' id="btnLoc" value=' 看 ' name='btnSumit' />
     </div>
 
            
