@@ -14,7 +14,7 @@ if (isset($_POST['btnSubmit'])) {
 <form action="" method="post" name="form_add_dm_ks">
     <div>
         <div >
-            <h3>書籍管理 : 回復更新</h3>
+            <h3>ការរៀបគម្ពីរៈ 回復更新</h3>
         </div>
 
         <div class="clr"></div>
@@ -47,7 +47,7 @@ if (isset($_POST['btnSubmit'])) {
                 <tr class="left">
                     <td>譯者-作者</td>
                     <td><select name='idTG' id="idTG" class="tacgia">
-                            <option value='0'>選擇作者</option>
+                            <option value='0'>ជ្រើសរើសអ្នកនិពន្ធ</option>
                             <?php
                             $MucLuc = $tg->TacGia_List();
                             while ($row_tg = mysql_fetch_assoc($MucLuc)) {
@@ -59,19 +59,19 @@ if (isset($_POST['btnSubmit'])) {
                     </td>
                 </tr>
                 <tr class="left">
-                    <td>出版社</td>
+                    <td>រោងពុម្ព</td>
                     <td><input type="text" name="NhaXB" id="NhaXB" class="tf" value="<?php echo $row['NhaXB']; ?>" />
                         <span class="error"><?php echo $loi['NhaXB']; ?></span>
                     </td>
                 </tr>
                 <tr class="left">
-                    <td>出版年</td>
+                    <td>ឆ្នាំបោះពុម្ព</td>
                     <td><input type="text" name="NamXB" id="NamXB" class="tf" value="<?php echo $row['NamXB']; ?>" />
                         <span class="error"><?php echo $loi['NamXB']; ?></span>
                     </td>
                 </tr>
                 <tr class="left">
-                    <td>封面照片</td>
+                    <td>រូបក្របមុខ</td>
                     <td>
                         <input type="hidden" name="url_image_old" value="<?php echo $row['url_image']; ?>" id="url_image_old" />
                         <div id="hinhanh">
@@ -85,7 +85,7 @@ if (isset($_POST['btnSubmit'])) {
                         <?php if($row['url_image']!= NULL){ ?>
                         <input type="button" id="btnUpload" value="Thay ảnh khác" /><input type="button" id="btnXoa" value="刪除 ảnh" />
                         <?php }else{ ?>
-                        <input type="button" id="btnUpload" value="選擇照片" /><input type="button" id="btnXoa" value="刪除 ảnh" style="display:none;" />
+                        <input type="button" id="btnUpload" value="ជ្រើរើសរូបថត" /><input type="button" id="btnXoa" value="刪除 ảnh" style="display:none;" />
                         <?php } ?>
                     </td>
                 </tr>

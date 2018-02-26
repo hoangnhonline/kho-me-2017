@@ -62,7 +62,7 @@ $sach = $dm->DanhMuc_List($idMLs, $idSachs, $limit, $offset);
 
 <div>
     <div >
-        <h3>類目 : 詳見清單</h3>
+        <h3>類目 : មើលបញ្ជី</h3>
     </div>
 
     <div class="clr"></div>
@@ -78,8 +78,8 @@ $sach = $dm->DanhMuc_List($idMLs, $idSachs, $limit, $offset);
                     <tr>
                         <td colspan="9">
                             <form method="get" action="" name="formTim" id="formTim">
-                                資料夾 &nbsp;<select name='idMLs' id="idMLs">
-                                    <option value='0'>選擇資料夾</option>
+                                ថត &nbsp;<select name='idMLs' id="idMLs">
+                                    <option value='0'>ជ្រើសរើសថត</option>
                                     <?php
                                     $MucLuc = $ml->MucLuc_List();
                                     while ($row = mysql_fetch_assoc($MucLuc)) {
@@ -101,7 +101,7 @@ $sach = $dm->DanhMuc_List($idMLs, $idSachs, $limit, $offset);
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="button" value="更新順序" id="capnhat_thutu"></td>
+                        <td colspan="2"><input type="button" value="ធ្វើបច្ចុប្បន្នភាពតាមលំដាប់លំដោយ" id="capnhat_thutu"></td>
                         <td colspan="6"><?php echo $ml->phantrang($page, $page_show, $total_page, $link); ?></td>
                     </tr>
                     <tr>

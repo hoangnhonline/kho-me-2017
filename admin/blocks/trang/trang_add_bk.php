@@ -143,11 +143,11 @@ if (isset($_POST[btnSumit])) {
 
             <table>
                 <tr class="left">
-                    <td>資料夾</td>
+                    <td>ថត</td>
                     <td>
                             <?php if ($row_ct['idML']) { ?>
                             <select name='idML' id="idML">
-                                <option value='0'>資料夾</option>
+                                <option value='0'>ថត</option>
                                     <?php
                                     $MucLuc = $ml->MucLuc_List();
                                     while ($row_muc = mysql_fetch_assoc($MucLuc)) {
@@ -158,7 +158,7 @@ if (isset($_POST[btnSumit])) {
                             </select>
                                 <?php } else { ?>
                             <select name='idML' id="idML">
-                                <option value='0'>資料夾</option>
+                                <option value='0'>ថត</option>
     <?php
     $MucLuc = $ml->MucLuc_List();
     while ($row_muc = mysql_fetch_assoc($MucLuc)) {

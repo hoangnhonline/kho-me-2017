@@ -53,8 +53,8 @@ $timduoc = mysql_num_rows($sach);
 </script>
 
 <div>
-    <div style="width: 48%;float: left"><h3>書籍管理 : 詳見清單</h3></div>
-        <div style="width: 48%;float: left;text-align: right;padding-top: 20px;text-transform: uppercase;font-size: 15px;font-weight: bold"><a href="index.php?com=sach_add">新增書籍</a></div>
+    <div style="width: 48%;float: left"><h3>ការរៀបគម្ពីរៈ មើលបញ្ជី</h3></div>
+        <div style="width: 48%;float: left;text-align: right;padding-top: 20px;text-transform: uppercase;font-size: 15px;font-weight: bold"><a href="index.php?com=sach_add">គម្ពីរ</a></div>
 
 </div>
 <div style="clear:both"></div>
@@ -68,9 +68,9 @@ $timduoc = mysql_num_rows($sach);
                         <input type="hidden" id="str_order" value="">
                         <input type="hidden" id="idML" value="<?php echo $_GET['idML']; ?>">
                         <form method="get" action="" name="formTim" id="formTim">
-                            資料夾
+                            ថត
                             <select name='idML' id="idML_search">
-                                <option value='0'>選擇資料夾</option>
+                                <option value='0'>ជ្រើសរើសថត</option>
                                 <?php
                                 $MucLuc = $ml->MucLuc_List();
                                 while ($row = mysql_fetch_assoc($MucLuc)) {
@@ -81,7 +81,7 @@ $timduoc = mysql_num_rows($sach);
                             &nbsp;&nbsp;&nbsp;
                             譯者-作者
                             <select name='idTG' id="idTG" class="tacgia">
-                                <option value='0'>選擇作者</option>
+                                <option value='0'>ជ្រើសរើសអ្នកនិពន្ធ</option>
                                 <?php
                                 $MucLuc = $tg->TacGia_List();
                                 while ($row = mysql_fetch_assoc($MucLuc)) {
@@ -101,7 +101,7 @@ $timduoc = mysql_num_rows($sach);
     <?php } ?>
                                 </select>
                                 &nbsp;&nbsp;&nbsp;
-                                依書名搜尋/書籍ID<input type="text" name="tukhoa" id="tukhoa" width="150" value="<?php echo isset($_GET['tukhoa']) ? $_GET['tukhoa'] : ""; ?>" />
+                                ស្វែងរកតាមចំណងជើង/ លេខកូដសៀវភៅ<input type="text" name="tukhoa" id="tukhoa" width="150" value="<?php echo isset($_GET['tukhoa']) ? $_GET['tukhoa'] : ""; ?>" />
 <?php } ?>
                             <input type="submit" name="btnSubmit" id="btnSubmit" value="  看 " />
 
@@ -116,10 +116,10 @@ $timduoc = mysql_num_rows($sach);
                     <th with="1%"></th>
                     <th with="1%">ID</th>
                     <th align="left" width="50%">书名 </th>
-                    <th align="left" width="10%">封面照片 </th>
+                    <th align="left" width="10%">រូបក្របមុខ </th>
                     <th>順序</th>
                     <th width="1%">狀態</th>
-                    <th align="left"> 資料夾 </th>
+                    <th align="left"> ថត </th>
                     <th> 编入者 </th>
                     <th align="left" width="15%"> 譯者-作者 </th>
                     <th align="left"> 编入日期 </th>
@@ -148,7 +148,7 @@ $timduoc = mysql_num_rows($sach);
                                     </a>
                                     <?php }else{ ?>
                                     <a href="index.php?com=sach_edit&amp;idSach=<?php echo $row['idSach'] ?>">
-                                        選擇照片
+                                        ជ្រើរើសរូបថត
                                     </a>
                                     <?php } ?>
                                 </td>
@@ -186,7 +186,7 @@ $timduoc = mysql_num_rows($sach);
                         <tr> <td colspan="11"> 相册类型 !!!</td></tr>
     <?php }
 } else { ?>
-                    <tr> <td colspan="11" align="center"><span style="font-size: 15px;color:red;"> 選擇資料夾 选择看书！</td></tr>
+                    <tr> <td colspan="11" align="center"><span style="font-size: 15px;color:red;"> ជ្រើសរើសថត 选择看书！</td></tr>
 <?php } ?>
             </tbody>
         </table>

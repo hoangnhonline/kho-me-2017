@@ -8,7 +8,7 @@ if (isset($_POST['btnSubmit'])) {
 ?>
     <div>
         <div >
-            <h3>書籍管理 : 新加</h3>
+            <h3>ការរៀបគម្ពីរៈ 新加</h3>
         </div>
         <div class="clr"></div>
     </div>
@@ -17,11 +17,11 @@ if (isset($_POST['btnSubmit'])) {
                 <div class="fields">
                         <div class="field field-first">
                                 <div class="label">
-                                        <label for="select">資料夾:</label>
+                                        <label for="select">ថត:</label>
                                 </div>
                                 <div class="select">
                                     <select id="idML" name='idML'>
-                                            <option value='0'>選擇資料夾</option>
+                                            <option value='0'>ជ្រើសរើសថត</option>
                                             <?php
                                             $MucLuc = $ml->MucLuc_List();
                                             while ($row = mysql_fetch_assoc($MucLuc)) {
@@ -34,7 +34,7 @@ if (isset($_POST['btnSubmit'])) {
 
                         <div class="field">
                                 <div class="label">
-                                        <label for="input-medium">書名/相簿名稱:</label>
+                                        <label for="input-medium">ចំណងជើងគម្ពីរ/ឈ្មោះអាលប៊ុម:</label>
                                 </div>
                                 <div class="input">
                                         <input type="text" name="TenSach" id="TenSach" class="medium" />
@@ -47,7 +47,7 @@ if (isset($_POST['btnSubmit'])) {
                                 </div>
                                 <div class="select">
                                     <select  name='idTG' id="idTG"  class="tacgia">
-                                            <option value='0'>選擇作者</option>
+                                            <option value='0'>ជ្រើសរើសអ្នកនិពន្ធ</option>
                                             <?php
                                             $MucLuc = $tg->TacGia_List();
                                             while ($row = mysql_fetch_assoc($MucLuc)) {
@@ -59,7 +59,7 @@ if (isset($_POST['btnSubmit'])) {
                         </div>
                         <div class="field">
                                 <div class="label">
-                                        <label for="input-small">出版社:</label>
+                                        <label for="input-small">រោងពុម្ព:</label>
                                 </div>
                                 <div class="input">
                                         <input type="text"  name="NhaXB" id="NhaXB" class="small" />
@@ -67,7 +67,7 @@ if (isset($_POST['btnSubmit'])) {
                         </div>
                         <div class="field">
                                 <div class="label">
-                                        <label for="input-small">出版年:</label>
+                                        <label for="input-small">ឆ្នាំបោះពុម្ព:</label>
                                 </div>
                                 <div class="input">
                                         <input type="text" name="NamXB" id="NamXB" class="small" />
@@ -75,10 +75,10 @@ if (isset($_POST['btnSubmit'])) {
                         </div>
                         <div class="field">
                                 <div class="label">
-                                        <label for="input-medium">封面照片:</label>
+                                        <label for="input-medium">រូបក្របមុខ:</label>
                                 </div>
                                 <div class="input">
-                                        <input type="button" id="btnUpload" value="選擇照片" /><input type="button" id="btnXoa" value="刪除 ảnh" style="display:none"/><br />
+                                        <input type="button" id="btnUpload" value="ជ្រើរើសរូបថត" /><input type="button" id="btnXoa" value="刪除 ảnh" style="display:none"/><br />
                                         <div id="hinhanh" style="clear:both"></div>
                                 </div>
                         </div>

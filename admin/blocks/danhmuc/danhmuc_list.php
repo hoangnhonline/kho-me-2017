@@ -15,7 +15,7 @@
 
 <div>
     <div>
-        <h3>類目 : 詳見清單</h3>
+        <h3>類目 : មើលបញ្ជី</h3>
     </div>    
     <div class="clr"></div>
 </div>

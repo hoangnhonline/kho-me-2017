@@ -48,10 +48,10 @@ $(function(){
         <form action="" method="post" name="form_add_dm_ks" id="mucluc_add_frm">
             	<table>
                 	<tr class="left">
-                    	<td>資料夾</td>
+                    	<td>ថត</td>
                         <td>
 							<select name='idML' id="idML">
-								<option value='0'>選擇資料夾</option>
+								<option value='0'>ជ្រើសរើសថត</option>
 								<?php $MucLuc = $ml->MucLuc_List();
 								while($row =  mysql_fetch_assoc($MucLuc)){
 								?>

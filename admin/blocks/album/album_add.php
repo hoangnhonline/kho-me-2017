@@ -91,10 +91,10 @@ if (isset($_POST['btnSumit'])) {
             
                 <table>
                     <tr class="left">
-                        <td width="150px">資料夾</td>
+                        <td width="150px">ថត</td>
                         <td >
                             <select name='idML' id="idML">
-                                <option value='0'>選擇資料夾</option>
+                                <option value='0'>ជ្រើសរើសថត</option>
                                 <?php
                                 $MucLuc = $ml->MucLuc_List();
                                 while ($row = mysql_fetch_assoc($MucLuc)) {
@@ -148,9 +148,9 @@ while ($row = mysql_fetch_assoc($sachss)) {
                     <tr>
                         <td colspan="9">
                             <form method="get" action="" name="formTim" id="formTim">
-                                資料夾
+                                ថត
                                 <select name='idMLs' id="idMLs">
-                                    <option value='0'>選擇資料夾</option>
+                                    <option value='0'>ជ្រើសរើសថត</option>
 <?php
 $MucLuc = $ml->MucLuc_List();
 while ($row = mysql_fetch_assoc($MucLuc)) {
@@ -182,7 +182,7 @@ while ($row = mysql_fetch_assoc($sachs)) {
                     <tr>
                         <th width="1%"></th>
                         <th width="1%"> Album ID </th>
-                        <th> 資料夾 </th>
+                        <th> ថត </th>
                         <th> 选择书籍 </th>
                         <th align="left">相册名称 </th>
                         <th>图片代表</th>

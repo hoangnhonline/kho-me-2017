@@ -89,7 +89,7 @@ if(isset($_GET['idTrang']) > 0){
 
 <div>
     <div>
-        <div style="width: 48%;float: left"><h3>頁面 : 詳見清單</h3></div>
+        <div style="width: 48%;float: left"><h3>頁面 : មើលបញ្ជី</h3></div>
         <div style="width: 48%;float: left;text-align: right;padding-top: 20px;text-transform: uppercase;font-size: 15px;font-weight: bold"><a href="index.php?com=trang_add">加页数</a></div>
     </div>
 
@@ -105,9 +105,9 @@ if(isset($_GET['idTrang']) > 0){
                     <tr>
                         <td colspan="6">
                             <form method="get" action="" name="formTim" id="formTim">
-                                資料夾
+                                ថត
                                 <select name='idMLs' id="idMLs">
-                                    <option value='0'>選擇資料夾</option>
+                                    <option value='0'>ជ្រើសរើសថត</option>
                                     <?php
                                     $MucLuc1 = $ml->MucLuc_List();
                                     while ($row1 = mysql_fetch_assoc($MucLuc1)) {

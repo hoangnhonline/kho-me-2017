@@ -1,7 +1,7 @@
 ﻿
 <div id="admin_navigation">
     <div>
-        <h3>tác giả : 詳見清單</h3>
+        <h3>tác giả : មើលបញ្ជី</h3>
     </div>
 
     <div class="clr"></div>

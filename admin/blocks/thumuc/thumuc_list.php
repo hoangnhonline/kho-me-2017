@@ -14,7 +14,7 @@
 </script>
 <div>
     <div>
-        <h3>thư mục : 詳見清單</h3>
+        <h3>thư mục : មើលបញ្ជី</h3>
     </div>   
     <div class="clr"></div>
 </div>

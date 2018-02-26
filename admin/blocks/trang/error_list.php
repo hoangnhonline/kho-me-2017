@@ -63,7 +63,7 @@ $list_trang = $trang->Error_List($limit,$offset);
 
 <div id="admin_navigation">
 	<div style="float:left;width:80%">
-		<h3>trang : 詳見清單</h3>
+		<h3>trang : មើលបញ្ជី</h3>
     </div>
     <div style="float:left;width:5%;padding-top:5px">
         <a href="index.php?com=trang_add"><input type="button" class="new" name="btnNew" value=""/></a><br />		
@@ -90,9 +90,9 @@ $list_trang = $trang->Error_List($limit,$offset);
                         	<tr>
                                 <td colspan="5">
                             <form method="get" action="" name="formTim" id="formTim">
-                                資料夾 
+                                ថត 
                                 <select name='idMLs' id="idMLs">
-                                    <option value='0'>選擇資料夾</option>
+                                    <option value='0'>ជ្រើសរើសថត</option>
                                     <?php $MucLuc1 = $ml->MucLuc_List();
                                     while($row1 =  mysql_fetch_assoc($MucLuc1)){
                                     ?>

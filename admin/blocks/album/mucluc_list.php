@@ -57,7 +57,7 @@ $(function(){
 
 <div id="admin_navigation">
 	<div style="float:left;width:80%">
-		<h3>類目 : 詳見清單</h3>
+		<h3>類目 : មើលបញ្ជី</h3>
     </div>
     <div style="float:left;width:5%;padding-top:5px">
         <a href="index.php?com=mucluc_add"><input type="button" class="new" name="btnNew" value=""/></a><br />		
@@ -84,9 +84,9 @@ $(function(){
                         <tr>
                                 <td colspan="9">
                             <form method="get" action="" name="formTim" id="formTim">
-                                資料夾 
+                                ថត 
                                 <select name='idMLs' id="idMLs">
-                                    <option value='0'>選擇資料夾</option>
+                                    <option value='0'>ជ្រើសរើសថត</option>
                                     <?php $MucLuc = $ml->MucLuc_List();
                                     while($row =  mysql_fetch_assoc($MucLuc)){
                                     ?>
